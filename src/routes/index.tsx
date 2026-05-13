@@ -117,8 +117,8 @@ function Index() {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ animationDelay: `${i * 90}ms` }}
-              className="group relative animate-fade-in opacity-0 [animation-fill-mode:forwards]"
+              style={{ animationDelay: `${i * 90}ms`, animationFillMode: "both" }}
+              className="group relative block animate-fade-in"
             >
               {/* Outer glow */}
               <span
@@ -127,33 +127,33 @@ function Index() {
 
               {/* Gradient border wrapper */}
               <span
-                className={`relative block rounded-2xl bg-gradient-to-r p-[1.5px] ${gradient} transition-transform duration-300 group-hover:-translate-y-1 group-active:translate-y-0`}
+                className={`relative block rounded-3xl bg-gradient-to-r p-[2px] ${gradient} transition-transform duration-300 group-hover:-translate-y-1 group-active:translate-y-0`}
               >
                 {/* Card surface */}
-                <span className="relative flex items-center gap-4 overflow-hidden rounded-[14px] bg-[oklch(0.16_0.02_270)]/90 px-4 py-4 backdrop-blur-xl">
+                <span className="relative flex items-center gap-5 overflow-hidden rounded-[22px] bg-[oklch(0.16_0.02_270)]/90 px-5 py-6 backdrop-blur-xl">
                   {/* Shimmer */}
                   <span className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
 
                   {/* Icon */}
                   <span
-                    className={`relative flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-white shadow-lg ring-1 ${ring} ${iconBg}`}
+                    className={`relative flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl text-white shadow-lg ring-1 ${ring} ${iconBg}`}
                   >
-                    <Icon className="h-5 w-5" strokeWidth={2.25} />
+                    <Icon className="h-6 w-6" strokeWidth={2.25} />
                   </span>
 
                   {/* Text */}
                   <span className="flex min-w-0 flex-1 flex-col text-left">
-                    <span className="truncate text-[15px] font-semibold leading-tight text-foreground">
+                    <span className="truncate text-base font-semibold leading-tight text-foreground">
                       {label}
                     </span>
-                    <span className="truncate text-xs text-muted-foreground">
+                    <span className="truncate pt-1 text-[13px] text-muted-foreground">
                       {sublabel}
                     </span>
                   </span>
 
                   {/* Arrow */}
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/[0.04] text-foreground/60 transition-all duration-300 group-hover:bg-white/10 group-hover:text-foreground group-hover:rotate-0 -rotate-45">
-                    <ArrowUpRight className="h-4 w-4" strokeWidth={2.5} />
+                  <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/[0.06] text-foreground/70 transition-all duration-300 group-hover:bg-white/15 group-hover:text-foreground group-hover:rotate-0 -rotate-45">
+                    <ArrowUpRight className="h-4.5 w-4.5" strokeWidth={2.5} />
                   </span>
                 </span>
               </span>
