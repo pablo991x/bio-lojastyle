@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Instagram, Twitter, Youtube, Globe, Mail, Github } from "lucide-react";
+import { MessageCircle, ShoppingBag, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 export const Route = createFileRoute("/")({
@@ -13,18 +13,33 @@ export const Route = createFileRoute("/")({
 });
 
 const links = [
-  { label: "Website", href: "https://example.com", icon: Globe },
-  { label: "Instagram", href: "https://instagram.com", icon: Instagram },
-  { label: "Twitter / X", href: "https://twitter.com", icon: Twitter },
-  { label: "YouTube", href: "https://youtube.com", icon: Youtube },
-  { label: "GitHub", href: "https://github.com", icon: Github },
-  { label: "Contato", href: "mailto:hello@example.com", icon: Mail },
-];
-
-const socials = [
-  { label: "Instagram", href: "https://instagram.com", icon: Instagram },
-  { label: "Twitter", href: "https://twitter.com", icon: Twitter },
-  { label: "YouTube", href: "https://youtube.com", icon: Youtube },
+  {
+    label: "WhatsApp",
+    sublabel: "(62) 99611-9964",
+    href: "https://wa.me/5562996119964",
+    icon: MessageCircle,
+    className:
+      "border-[oklch(0.55_0.18_150)]/40 bg-[oklch(0.5_0.17_150)]/20 hover:bg-[oklch(0.55_0.18_150)]/30 hover:border-[oklch(0.6_0.18_150)]/60",
+    iconClassName: "text-[oklch(0.85_0.18_150)]",
+  },
+  {
+    label: "Veja nosso catálogo de produtos",
+    sublabel: "lojastyle.shop",
+    href: "https://lojastyle.shop",
+    icon: ShoppingBag,
+    className:
+      "border-white/10 bg-white/[0.04] hover:bg-white/[0.08] hover:border-white/20",
+    iconClassName: "text-foreground/80",
+  },
+  {
+    label: "Nossa localização",
+    sublabel: "Abrir no Google Maps",
+    href: "https://share.google/ViFg28XnnnbgOIe1d",
+    icon: MapPin,
+    className:
+      "border-[oklch(0.6_0.22_25)]/40 bg-[oklch(0.5_0.2_25)]/20 hover:bg-[oklch(0.55_0.22_25)]/30 hover:border-[oklch(0.65_0.22_25)]/60",
+    iconClassName: "text-[oklch(0.85_0.18_25)]",
+  },
 ];
 
 function Index() {
@@ -44,57 +59,32 @@ function Index() {
         />
       </div>
 
-      <div className="mx-auto flex min-h-screen w-full max-w-md flex-col items-center px-6 py-16">
-        {/* Avatar / Logo */}
-        <div className="relative mb-6">
-          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[oklch(0.6_0.22_280)] to-[oklch(0.65_0.18_200)] blur-xl opacity-60" />
-          <div className="relative flex h-28 w-28 items-center justify-center rounded-full border border-white/10 bg-white/5 p-3 backdrop-blur-sm">
-            <img src={logo} alt="Logo" className="h-full w-full object-contain" />
-          </div>
+      <div className="mx-auto flex min-h-screen w-full max-w-md flex-col items-center px-6 py-12">
+        {/* Logo */}
+        <div className="mb-8 w-full max-w-[260px]">
+          <img src={logo} alt="Logo" className="h-auto w-full object-contain" />
         </div>
 
-        <h1 className="text-2xl font-semibold tracking-tight">@username</h1>
-        <p className="mt-2 text-center text-sm text-muted-foreground">
-          Bem-vindo. Encontre todos os meus links abaixo.
-        </p>
-
         {/* Links */}
-        <nav className="mt-10 flex w-full flex-col gap-3" aria-label="Links">
-          {links.map(({ label, href, icon: Icon }) => (
+        <nav className="flex w-full flex-col gap-4" aria-label="Links">
+          {links.map(({ label, sublabel, href, icon: Icon, className, iconClassName }) => (
             <a
               key={label}
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex items-center justify-between overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4 backdrop-blur-sm transition-all hover:border-white/20 hover:bg-white/[0.06] hover:-translate-y-0.5"
+              className={`group flex items-center gap-4 rounded-2xl border px-5 py-4 backdrop-blur-sm transition-all hover:-translate-y-0.5 ${className}`}
             >
-              <span className="absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-              <span className="flex items-center gap-3">
-                <Icon className="h-5 w-5 text-foreground/80" />
-                <span className="font-medium">{label}</span>
+              <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/10 ${iconClassName}`}>
+                <Icon className="h-5 w-5" />
               </span>
-              <span className="text-xs text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100">
-                Abrir →
+              <span className="flex flex-col text-left">
+                <span className="font-medium leading-tight">{label}</span>
+                <span className="text-xs text-muted-foreground">{sublabel}</span>
               </span>
             </a>
           ))}
         </nav>
-
-        {/* Socials */}
-        <div className="mt-10 flex items-center gap-4">
-          {socials.map(({ label, href, icon: Icon }) => (
-            <a
-              key={label}
-              href={href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={label}
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-foreground/80 transition-all hover:scale-110 hover:border-white/20 hover:bg-white/[0.08] hover:text-foreground"
-            >
-              <Icon className="h-4 w-4" />
-            </a>
-          ))}
-        </div>
 
         <footer className="mt-auto pt-12 text-xs text-muted-foreground">
           © {new Date().getFullYear()} Todos os direitos reservados
