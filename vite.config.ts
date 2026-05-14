@@ -21,8 +21,17 @@ function vercelStaticIndex() {
         (e: any) => e.isEntry,
       ) as any;
       if (!entry) return;
-      const cssLinks = (entry.css ?? [])
-        .map((href: string) => `<link rel="stylesheet" href="/${href}">`)
+      const cssFiles = new Set<string>([
+        ...(entry.css ?? []),
+        ...((entry.assets ?? []) as string[]).filter((a) => a.endsWith(".css")),
+      ]);
+      for (const e of Object.values(manifest) as any[]) {
+        if (e.file && typeof e.file === "string" && e.file.endsWith(".css")) {
+          cssFiles.add(e.file);
+        }
+      }
+      const cssLinks = Array.from(cssFiles)
+        .map((href) => `<link rel="stylesheet" href="/${href}">`)
         .join("\n    ");
       const html = `<!doctype html>
 <html lang="pt-BR">
