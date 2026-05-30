@@ -53,9 +53,9 @@ function Index() {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex items-center gap-4 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4 transition-all duration-300 hover:scale-[1.02] hover:bg-white/[0.06] shadow-[0_0_15px_rgba(59,130,246,0.1)] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)]"
+              className="group relative flex items-center gap-4 rounded-xl border border-white/5 bg-white/[0.02] px-5 py-4 transition-all duration-300 hover:scale-[1.02] hover:bg-white/[0.04] shadow-[0_0_15px_rgba(255,255,255,0.02)] hover:shadow-[0_0_25px_rgba(255,255,255,0.05)]"
             >
-              <div className="absolute -inset-1 -z-10 rounded-2xl bg-blue-500/10 blur-xl transition-opacity duration-300 opacity-100" />
+              <div className="absolute -inset-1 -z-10 rounded-2xl bg-white/2 blur-xl transition-opacity duration-300 opacity-0 group-hover:opacity-100" />
               <span
                 className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg"
                 style={{ backgroundColor: `color-mix(in oklab, ${accent} 18%, transparent)`, color: accent }}
