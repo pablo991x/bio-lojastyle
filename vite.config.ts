@@ -53,22 +53,22 @@ function vercelStaticIndex() {
       <div class="mx-auto flex min-h-screen w-full max-w-md flex-col px-6 py-12">
         ${logoMarkup}
         <nav class="flex flex-col gap-3" aria-label="Links">
-          <a href="https://wa.me/5562996119964" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-4 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4 transition-all duration-300 hover:scale-[1.02] hover:bg-white/[0.06] shadow-[0_0_15px_rgba(59,130,246,0.1)] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)]">
-            <div class="absolute -inset-1 -z-10 rounded-2xl bg-blue-500/10 blur-xl transition-opacity duration-300 opacity-100"></div>
+          <a href="https://wa.me/5562996119964" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-4 rounded-xl border border-black/5 bg-black/[0.02] px-5 py-4 transition-all duration-300 hover:scale-[1.02] hover:bg-black/[0.04] shadow-[0_0_15px_rgba(59,130,246,0.05)] hover:shadow-[0_0_25px_rgba(59,130,246,0.1)]">
+            <div class="absolute -inset-1 -z-10 rounded-2xl bg-blue-500/5 blur-xl transition-opacity duration-300 opacity-100"></div>
             <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg" style="background-color: color-mix(in oklab, oklch(0.68 0.17 152) 18%, transparent); color: oklch(0.68 0.17 152)">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
             </span>
             <span class="flex min-w-0 flex-col"><span class="truncate text-[15px] font-medium text-foreground">WhatsApp</span><span class="truncate text-[13px] text-muted-foreground">(62) 99611-9964</span></span>
           </a>
-          <a href="https://lojastyle.shop" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-4 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4 transition-all duration-300 hover:scale-[1.02] hover:bg-white/[0.06] shadow-[0_0_15px_rgba(59,130,246,0.1)] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)]">
-            <div class="absolute -inset-1 -z-10 rounded-2xl bg-blue-500/10 blur-xl transition-opacity duration-300 opacity-100"></div>
+          <a href="https://lojastyle.shop" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-4 rounded-xl border border-black/5 bg-black/[0.02] px-5 py-4 transition-all duration-300 hover:scale-[1.02] hover:bg-black/[0.04] shadow-[0_0_15px_rgba(59,130,246,0.05)] hover:shadow-[0_0_25px_rgba(59,130,246,0.1)]">
+            <div class="absolute -inset-1 -z-10 rounded-2xl bg-blue-500/5 blur-xl transition-opacity duration-300 opacity-100"></div>
             <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg" style="background-color: color-mix(in oklab, oklch(0.78 0.04 270) 18%, transparent); color: oklch(0.78 0.04 270)">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
             </span>
             <span class="flex min-w-0 flex-col"><span class="truncate text-[15px] font-medium text-foreground">Catálogo de produtos</span><span class="truncate text-[13px] text-muted-foreground">lojastyle.shop</span></span>
           </a>
-          <a href="https://share.google/ViFg28XnnnbgOIe1d" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-4 rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4 transition-all duration-300 hover:scale-[1.02] hover:bg-white/[0.06] shadow-[0_0_15px_rgba(59,130,246,0.1)] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)]">
-            <div class="absolute -inset-1 -z-10 rounded-2xl bg-blue-500/10 blur-xl transition-opacity duration-300 opacity-100"></div>
+          <a href="https://share.google/ViFg28XnnnbgOIe1d" target="_blank" rel="noopener noreferrer" class="group relative flex items-center gap-4 rounded-xl border border-black/5 bg-black/[0.02] px-5 py-4 transition-all duration-300 hover:scale-[1.02] hover:bg-black/[0.04] shadow-[0_0_15px_rgba(59,130,246,0.05)] hover:shadow-[0_0_25px_rgba(59,130,246,0.1)]">
+            <div class="absolute -inset-1 -z-10 rounded-2xl bg-blue-500/5 blur-xl transition-opacity duration-300 opacity-100"></div>
             <span class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg" style="background-color: color-mix(in oklab, oklch(0.65 0.2 25) 18%, transparent); color: oklch(0.65 0.2 25)">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
             </span>
