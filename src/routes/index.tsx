@@ -50,7 +50,7 @@ function Index() {
           transform: 'scale(1.1)'
         }}
       />
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-md flex-col justify-end pb-[2%] px-6 pt-12">
+      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-md flex-col justify-end pb-[10%] px-6 pt-24 md:pt-12">
         {/* Logo */}
         <div className="mx-auto mb-8 w-full max-w-[192px]">
           <img src={logo} alt="Style Shop" className="h-auto w-full object-contain" />
