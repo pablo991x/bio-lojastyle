@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MessageCircle, ShoppingBag, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
-import backgroundImage from "@/assets/background.jpg";
+import background from "@/assets/background.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -44,7 +44,7 @@ function Index() {
         <div 
           className="h-full w-full blur-md scale-110"
           style={{ 
-            backgroundImage: `url(${backgroundImage})`,
+            backgroundImage: `url(${background})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
