@@ -44,9 +44,9 @@ function Index() {
         <img 
           src={backgroundImage} 
           alt="" 
-          className="h-full w-full object-cover blur-md scale-110"
+          className="h-full w-full object-cover blur-sm scale-105"
         />
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
       <div className="mx-auto flex min-h-screen w-full max-w-md flex-col justify-end pb-[2%] px-6 pt-12">
         {/* Logo */}
