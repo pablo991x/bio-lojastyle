@@ -39,7 +39,7 @@ const links = [
 function Index() {
   return (
     <main className="min-h-screen bg-background text-foreground">
-      <div className="mx-auto flex min-h-screen w-full max-w-md flex-col justify-center px-6 py-12">
+      <div className="mx-auto flex min-h-screen w-full max-w-md flex-col justify-end pb-24 px-6 pt-12">
         {/* Logo */}
         <div className="mx-auto mb-8 w-full max-w-[240px]">
           <img src={logo} alt="Style Shop" className="h-auto w-full object-contain" />
