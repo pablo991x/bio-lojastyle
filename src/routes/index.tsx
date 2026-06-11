@@ -46,7 +46,7 @@ function Index() {
           backgroundImage: `url(${background})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          filter: 'blur(10.8px) brightness(0.3)',
+          filter: 'blur(8.64px) brightness(0.3)',
           transform: 'scale(1.1)'
         }}
       />
