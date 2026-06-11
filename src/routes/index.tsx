@@ -39,7 +39,7 @@ const links = [
 
 function Index() {
   return (
-    <main className="relative min-h-screen bg-background text-foreground overflow-hidden">
+    <main className="relative min-h-screen text-foreground overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
         className="fixed inset-0 -z-20 w-full h-full blur-md scale-110"
