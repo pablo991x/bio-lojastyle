@@ -46,7 +46,7 @@ function Index() {
           backgroundImage: `url(${background})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          filter: 'blur(8px) brightness(0.6)'
+          filter: 'brightness(0.6)'
         }}
       />
       <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-md flex-col justify-end pb-[2%] px-6 pt-12">
