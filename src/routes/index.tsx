@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MessageCircle, ShoppingBag, MapPin, Bike } from "lucide-react";
+import { MessageCircle, ShoppingBag, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
 import background from "@/assets/background.webp";
 
@@ -86,13 +86,6 @@ function Index() {
         <footer className="mt-auto pt-12 text-center text-xs text-muted-foreground">
           © {new Date().getFullYear()} Style Shop
         </footer>
-
-        {/* Motoboy Icon */}
-        <div className="fixed bottom-6 right-6 z-20 md:hidden">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-black/80 border border-white/10 text-white backdrop-blur-sm shadow-lg">
-            <Bike className="h-6 w-6" />
-          </div>
-        </div>
       </div>
     </main>
   );
