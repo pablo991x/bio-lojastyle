@@ -40,7 +40,7 @@ const links = [
 function Index() {
   return (
     <main className="relative min-h-screen text-foreground overflow-hidden">
-      <div className="fixed inset-0 -z-20 overflow-hidden bg-red-500">
+      <div className="fixed inset-0 z-0 overflow-hidden bg-red-500">
         <div 
           className="h-full w-full"
           style={{ 
