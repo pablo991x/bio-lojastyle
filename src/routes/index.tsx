@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MessageCircle, ShoppingBag, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
+import background from "@/assets/background.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -38,7 +39,13 @@ const links = [
 
 function Index() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="relative min-h-screen bg-background text-foreground overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div 
+        className="fixed inset-0 -z-20 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${background})` }}
+      />
+      <div className="fixed inset-0 -z-10 bg-black/70 backdrop-blur-[2px]" />
       <div className="mx-auto flex min-h-screen w-full max-w-md flex-col justify-end pb-24 px-6 pt-12">
         {/* Logo */}
         <div className="mx-auto mb-8 w-full max-w-[240px]">
