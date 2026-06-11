@@ -70,6 +70,12 @@
   }
 }
 
+@layer utilities {
+  .group:hover, .group:active {
+    animation: neon-pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(0 0 0);
