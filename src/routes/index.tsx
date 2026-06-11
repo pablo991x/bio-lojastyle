@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MessageCircle, ShoppingBag, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
-import background from "@/assets/background.jpg";
+import background from "@/assets/background.jpg?url";
 
 export const Route = createFileRoute("/")({
   head: () => ({
