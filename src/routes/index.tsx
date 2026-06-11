@@ -51,7 +51,7 @@ function Index() {
         }}
       />
       <div className="fixed inset-0 -z-10 w-full h-full bg-black/70 backdrop-blur-[2px]" />
-      <div className="mx-auto flex min-h-screen w-full max-w-md flex-col justify-end pb-24 px-6 pt-12">
+      <div className="mx-auto flex min-h-screen w-full max-w-md flex-col justify-end pb-12 px-6 pt-12">
         {/* Logo */}
         <div className="mx-auto mb-8 w-full max-w-[192px]">
           <img src={logo} alt="Style Shop" className="h-auto w-full object-contain" />
