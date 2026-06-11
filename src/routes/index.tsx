@@ -65,6 +65,10 @@ function Index() {
               target="_blank"
               rel="noopener noreferrer"
               className="group relative flex items-center gap-4 rounded-xl border border-white/10 bg-black px-5 py-4 transition-all duration-300 hover:scale-[1.02]"
+              style={{ 
+                '--neon-color': accent,
+                animation: 'neon-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+              } as React.CSSProperties}
             >
               <span
                 className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg"
