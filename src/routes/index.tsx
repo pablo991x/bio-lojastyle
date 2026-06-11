@@ -41,12 +41,15 @@ function Index() {
   return (
     <main className="relative min-h-screen text-foreground overflow-hidden">
       <div className="fixed inset-0 -z-20 overflow-hidden">
-        <img 
-          src={backgroundImage} 
-          alt="" 
-          className="h-full w-full object-cover"
+        <div 
+          className="h-full w-full blur-md scale-110"
+          style={{ 
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/60" />
       </div>
       <div className="mx-auto flex min-h-screen w-full max-w-md flex-col justify-end pb-[2%] px-6 pt-12">
         {/* Logo */}
