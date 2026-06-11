@@ -41,7 +41,7 @@ function Index() {
   return (
     <main className="relative min-h-screen text-foreground overflow-hidden">
       <div 
-        className="fixed inset-0 z-0 bg-white"
+        className="fixed inset-0 z-0 bg-black"
         style={{ 
           backgroundImage: `url(${background})`,
           backgroundSize: 'cover',
