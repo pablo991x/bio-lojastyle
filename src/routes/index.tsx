@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { MessageCircle, ShoppingBag, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
-import background from "@/assets/background.jpg";
+import backgroundImage from "@/assets/background.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -42,7 +42,7 @@ function Index() {
     <main className="relative min-h-screen text-foreground overflow-hidden">
       <div className="fixed inset-0 -z-20 overflow-hidden">
         <img 
-          src={background} 
+          src={backgroundImage} 
           alt="" 
           className="h-full w-full object-cover blur-md scale-110"
         />
