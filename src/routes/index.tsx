@@ -39,7 +39,7 @@ const links = [
 
 function Index() {
   return (
-    <main className="relative min-h-screen bg-black text-foreground overflow-hidden">
+    <main className="relative min-h-screen bg-background text-foreground overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
         className="fixed inset-0 -z-20 w-full h-full"
@@ -50,7 +50,7 @@ function Index() {
           backgroundRepeat: 'no-repeat'
         }}
       />
-      <div className="fixed inset-0 -z-10 w-full h-full bg-black/70 backdrop-blur-[2px]" />
+      <div className="fixed inset-0 -z-10 w-full h-full bg-white/70 backdrop-blur-[2px]" />
       <div className="mx-auto flex min-h-screen w-full max-w-md flex-col justify-end pb-24 px-6 pt-12">
         {/* Logo */}
         <div className="mx-auto mb-8 w-full max-w-[240px]">
