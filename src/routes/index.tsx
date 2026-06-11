@@ -64,7 +64,7 @@ function Index() {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex items-center gap-4 rounded-xl border border-white/10 bg-black px-5 py-4 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+              className="group relative flex items-center gap-4 rounded-xl border border-white/10 bg-black/80 px-5 py-4 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] backdrop-blur-sm"
               style={{ 
                 '--neon-color': accent,
               } as React.CSSProperties}
