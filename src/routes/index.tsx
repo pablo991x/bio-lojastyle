@@ -42,7 +42,7 @@ function Index() {
     <main className="relative min-h-screen bg-background text-foreground overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
-        className="fixed inset-0 -z-20 w-full h-full"
+        className="fixed inset-0 -z-20 w-full h-full blur-md scale-110"
         style={{ 
           backgroundImage: `url(${background})`,
           backgroundSize: 'cover',
@@ -50,7 +50,7 @@ function Index() {
           backgroundRepeat: 'no-repeat'
         }}
       />
-      <div className="fixed inset-0 -z-10 w-full h-full bg-black/70 backdrop-blur-[2px]" />
+      <div className="fixed inset-0 -z-10 w-full h-full bg-black/80" />
       <div className="mx-auto flex min-h-screen w-full max-w-md flex-col justify-end pb-[2%] px-6 pt-12">
         {/* Logo */}
         <div className="mx-auto mb-8 w-full max-w-[192px]">
