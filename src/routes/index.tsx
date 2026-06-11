@@ -65,9 +65,8 @@ function Index() {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex items-center gap-4 rounded-xl border border-white/10 bg-black px-5 py-4 transition-all duration-300 hover:scale-[1.02] overflow-visible"
+              className="group relative flex items-center gap-4 rounded-xl border border-white/10 bg-black px-5 py-4 transition-all duration-300 hover:scale-[1.02]"
             >
-              <div className="absolute -inset-4 -z-20 rounded-2xl bg-[#D4AF37]/30 blur-3xl transition-opacity duration-300 opacity-0 group-hover:opacity-100 pointer-events-none" />
               <span
                 className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg"
                 style={{ backgroundColor: `color-mix(in oklab, ${accent} 18%, transparent)`, color: accent }}
