@@ -39,7 +39,7 @@ const links = [
 
 function Index() {
   return (
-    <main className="relative h-screen bg-background text-foreground overflow-hidden">
+    <main className="relative min-h-screen bg-background text-foreground overflow-hidden">
       {/* Background Image with Overlay */}
       <div 
         className="fixed inset-0 -z-20 w-full h-full"
@@ -51,7 +51,7 @@ function Index() {
         }}
       />
       <div className="fixed inset-0 -z-10 w-full h-full bg-black/70 backdrop-blur-[2px]" />
-      <div className="mx-auto flex h-screen w-full max-w-md flex-col justify-end pb-[5%] px-6 pt-6 overflow-hidden">
+      <div className="mx-auto flex min-h-screen w-full max-w-md flex-col justify-end pb-[5%] px-6 pt-12">
         {/* Logo */}
         <div className="mx-auto mb-8 w-full max-w-[192px]">
           <img src={logo} alt="Style Shop" className="h-auto w-full object-contain" />
@@ -81,7 +81,7 @@ function Index() {
           ))}
         </nav>
 
-        <footer className="mt-4 pb-4 text-center text-xs text-muted-foreground">
+        <footer className="mt-auto pt-12 text-center text-xs text-muted-foreground">
           © {new Date().getFullYear()} Style Shop
         </footer>
       </div>
