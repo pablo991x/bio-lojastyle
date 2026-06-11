@@ -40,18 +40,15 @@ const links = [
 function Index() {
   return (
     <main className="relative min-h-screen text-foreground overflow-hidden">
-      <div className="fixed inset-0 z-0 overflow-hidden bg-red-500">
-        <div 
-          className="h-full w-full"
-          style={{ 
-            backgroundImage: `url(${background})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'blur(8px) brightness(0.6)',
-            transform: 'scale(1.1)'
-          }}
-        />
-      </div>
+      <div 
+        className="fixed inset-0 z-0 bg-red-500"
+        style={{ 
+          backgroundImage: `url(${background})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'blur(8px) brightness(0.6)'
+        }}
+      />
       <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-md flex-col justify-end pb-[2%] px-6 pt-12">
         {/* Logo */}
         <div className="mx-auto mb-8 w-full max-w-[192px]">
